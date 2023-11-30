@@ -1,0 +1,36 @@
+.tracker {
+    text-align: center;
+  }
+  
+  .symptoms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .symptomButton {
+    background-color: #f0f0f0;
+    border: 2px solid #d1d1d1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .symptomButton:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .selected {
+    background-color: #a2d2ff;
+    color: white;
+  }
+  
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+  }
+  

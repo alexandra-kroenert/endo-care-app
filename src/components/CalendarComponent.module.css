@@ -1,0 +1,10 @@
+.calendarComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .symptomTrackerSection {
+    margin-top: 20px;
+  }
+  

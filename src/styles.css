@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333; /* You might want to adjust this color as well for better contrast */
+  margin: 0;
+  padding: 0;
+  background-color: #A9C9FF; /* Soft blue background */
+  /* Remove the background image for a cleaner look */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+/* ...rest of your styles... */
+
+/* Adjust the header and nav styles as needed for contrast and readability */
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fff;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #171717;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #28527a; /* Consider a darker shade of blue for hover effects */
+}
+
+button {
+  background-color: #181818da; /* Adjust if needed for better visibility against the new background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #A2D2FF; /* This could work well with the new background */
+}

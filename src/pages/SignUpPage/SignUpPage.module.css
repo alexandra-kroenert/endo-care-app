@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F3E9E5; /* Pastel peach background */
+    font-family: 'Poppins', sans-serif; /* A modern, friendly font */
+    color: #5C4B51; /* Dark tone for contrast */
+    padding: 20px;
+    text-align: center;
+    background-image: url('../../Images/SignIn.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #F77F74;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F77F74; /* Pastel coral for the button */
+    color: #FFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #D56F68; /* Slightly darker shade for hover effect */
+}

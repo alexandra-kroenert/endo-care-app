@@ -1,0 +1,61 @@
+.homeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px; /* Adjust as needed */
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #A9C9FF; /* The soft blue background color */
+  }
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #F77F74;
+}
+
+.textCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #ffffff2d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F77F74; /* Pastel coral for the button */
+    color: #FFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.headline {
+    margin-top: 40px;
+    font-size: 1.5rem; /* Subtitle size */
+    color: #333;
+}
+
+.button:hover {
+    background-color: #D56F68; /* Slightly darker shade for hover effect */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,49 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  float: left; /* Aligns the logo to the left */
+  padding: 1rem; /* Adds some space around the logo */
+  width: 12%;
+}
+
+/* .header {
+  
+} */
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns nav items to the right */
+  padding: 1rem;
+  list-style: none;
+  margin-left: auto; /* Pushes the navList to the right */
+}
+
+
+/* .navItem {
+ 
+} */
+
+.navLink {
+  text-decoration: none;
+  color: #333; /* Neutral color for the links */
+  font-weight: 500; /* Slightly bolder font for readability */
+  padding: 0.5rem 1rem; /* Padding for clickable area */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navLink:hover, .navLink:focus {
+  color: #5f27cd; /* Highlight color for hover and focus */
+  background-color: #f9f9f9; /* Slight background color on hover for feedback */
+}
+
+
+/* .signOutButton {
+  
+} */

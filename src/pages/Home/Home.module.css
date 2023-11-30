@@ -1,0 +1,35 @@
+.homeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px; /* Adjust as needed */
+    padding-left: 80px; 
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #A9C9FF; /* The soft blue background color */
+  }
+  
+  .textContent {
+    flex-basis: 40%; /* Takes up half the container width */
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Large, bold font for the title */
+    color: #333; /* Dark color for the text */
+  }
+  
+  .subtitle {
+    font-size: 1.5rem; /* Subtitle size */
+    color: #333;
+  }
+  
+  .imageContainer {
+    flex-basis: 50%; /* Takes up half the container width */
+  }
+  
+  .groupImage {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    /* align-items: end; */
+    border-radius: 10px;
+  }
+  
