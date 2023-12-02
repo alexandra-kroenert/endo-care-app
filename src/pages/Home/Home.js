@@ -8,7 +8,7 @@ function Home() {
     <div className={styles.homeContainer}>
       <div className={styles.textContent}>
         <h1 className={styles.title}>EndoCare - Your Endometriosis Symptom Tracker</h1>
-        <p className={styles.subtitle}>The more your understand about your body and your endo, the easier it will be to decide which treatment works best for you.</p>
+        <p className={styles.subtitle}>Empowering you to make the right treatment choices for your body.</p>
       </div>
       <div className={styles.imageContainer}>
         <img src={groupPhoto} alt="Group of Women" className={styles.groupImage} />

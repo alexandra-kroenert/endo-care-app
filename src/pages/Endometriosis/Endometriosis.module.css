@@ -13,6 +13,20 @@
     color: #F77F74;
 }
 
+/* .textCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    text-align: left;
+} */
+
 .textCard {
     display: flex;
     flex-direction: column;
@@ -22,8 +36,24 @@
     margin: 20px;
     width: 30%;
     border-radius: 10px;
-    background-color: #ffffff2d;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    /* background-image: url('/Users/alexandrakroenert/Desktop/My-Code/EndoCare-App/endo-care/src/Images/pink-gradient.png');  *//* Replace with your image URL */
+    background-color:#FFC0CB;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Needed for absolute positioning of the overlay */
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.textCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent; /* Transparent initially */
+    transition: background-color 0.3s ease;
 }
 
 .description {
@@ -38,7 +68,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #F77F74; /* Pastel coral for the button */
+    background-color: #f0b3ad; /* Pastel coral for the button */
     color: #FFF;
     font-size: 1rem;
     cursor: pointer;
@@ -51,6 +81,11 @@
     color: #333;
 }
 
+.textcard:hover {
+    background-color: #fff; /* Slightly darker shade for hover effect */
+    background-image: none !important; /* Remove the background image */
+}
+
 .button:hover {
     background-color: #D56F68; /* Slightly darker shade for hover effect */
 }
@@ -58,4 +93,46 @@
 .container {
     display: flex;
     flex-direction: row;
+}
+
+.cardText {
+    color: #666;
+    line-height: 1.6;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Transition for text appearance */
+    position: relative;
+    z-index: 1; /* Ensure it's above the overlay */
+}
+
+.textCard:hover::before {
+    background-color: #fff; /* White overlay on hover */
+}
+
+.cardTitle, .cardText {
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.textCard:hover {
+    background-color: #fff; /* White background on hover */
+    color: #333; /* Show text on hover */
+}
+
+.textCard:hover .cardTitle {
+    color: #ed70b7; /* Pink accent color for title on hover */
+}
+
+.textcard:hover::before .cardTitle {
+    color: #666;
+}
+
+.textCard:hover .cardText {
+    opacity: 1; /* Standard text color for description on hover */
+}
+
+.cardTitle {
+    color: #ed70b7; /* Pink accent color */
+    margin-bottom: 5px;
+    text-align: left;
+    z-index: 1; /* Ensure it's above the overlay */
+    position: relative;
 }
