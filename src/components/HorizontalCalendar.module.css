@@ -1,0 +1,53 @@
+.monthSelector {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: hsl(8, 15%, 50%); /* Example pastel color */
+  }
+
+  .monthSelector button {
+    background-color: #f0e6f6; /* Lighter background color for buttons */
+    color: #6a4f4b; /* Keeping text color consistent with the theme */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .monthSelector button:hover {
+    background-color: #a2d2ff; /* Light blue on hover */
+    color: white;
+  }
+  
+  .calendarContainer {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #fff0f6; /* Light pastel pink background */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dateButton {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #fde2e4; /* Pastel pink */
+    color: #92706b; /* Darker shade for contrast */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dateButton:hover {
+    background-color: #fbc2eb; /* Slightly darker pastel pink on hover */
+    color: white;
+  }
+  
+  .selectedDate {
+    background-color: #a2d2ff; /* Light blue for selected date */
+    color: white;
+    border: 1px solid #a2d2ff;
+  }
+  

@@ -1,35 +1,53 @@
 .homeContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 80px; /* Adjust as needed */
-    padding-left: 80px; 
-    min-height: 100vh; /* Full height of the viewport */
-    background-color: #A9C9FF; /* The soft blue background color */
+  display: flex;
+  flex-direction: column; /* Stack content vertically on smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Reduced padding */
+  min-height: 100vh;
+  background-color: #A9C9FF;
+}
+
+.textContent {
+  flex-basis: 100%; /* Full width on small screens */
+  margin-bottom: 20px; /* Spacing between text and image */
+}
+
+.title {
+  font-size: 2rem; /* Slightly smaller font for smaller screens */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+.imageContainer {
+  flex-basis: 100%;
+}
+
+.groupImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .homeContainer {
+    flex-direction: row; /* Original layout for larger screens */
+    padding-right: 80px;
+    padding-left: 80px;
   }
-  
-  .textContent {
-    flex-basis: 40%; /* Takes up half the container width */
+
+  .textContent, .imageContainer {
+    flex-basis: 50%; /* Original flex basis for larger screens */
   }
-  
+
   .title {
-    font-size: 2.5rem; /* Large, bold font for the title */
-    color: #333; /* Dark color for the text */
+    font-size: 2.5rem;
   }
-  
+
   .subtitle {
-    font-size: 1.5rem; /* Subtitle size */
-    color: #333;
+    font-size: 1.5rem;
   }
-  
-  .imageContainer {
-    flex-basis: 50%; /* Takes up half the container width */
-  }
-  
-  .groupImage {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    /* align-items: end; */
-    border-radius: 10px;
-  }
-  
+}

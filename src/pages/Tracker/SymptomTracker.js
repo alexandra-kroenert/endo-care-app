@@ -1,26 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import HorizontalCalendar from '../../components//HorizontalCalendar'; // Ensure this is correctly imported
 import styles from './SymptomTracker.module.css';
 
-function SymptomTracker({ date }) {
+function SymptomTracker() {
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
 
   useEffect(() => {
-    // Check if date is defined
-    if (!date) {
-      console.error("Date prop is undefined.");
-      return;
-    }
-
-    // Load stored symptoms from local storage on component mount
-    const dateKey = date.toISOString().split('T')[0];
+    // Load stored symptoms from local storage when selectedDate changes
+    const dateKey = selectedDate.toISOString().split('T')[0];
     const storedSymptoms = JSON.parse(localStorage.getItem(`symptoms-${dateKey}`)) || [];
     setSelectedSymptoms(storedSymptoms);
-  }, [date]);
-
-  // Return a fallback UI if date is not provided
-  if (!date) {
-    return <div>Invalid date</div>;
-  }
+  }, [selectedDate]);
 
   const symptoms = ['Pain', 'Fatigue', 'Nausea', 'Headache', 'Bloating']; // Add more symptoms as needed
 
@@ -29,12 +20,15 @@ function SymptomTracker({ date }) {
       ? selectedSymptoms.filter(s => s !== symptom) 
       : [...selectedSymptoms, symptom];
     setSelectedSymptoms(newSelectedSymptoms);
-    localStorage.setItem(`symptoms-${date.toISOString().split('T')[0]}`, JSON.stringify(newSelectedSymptoms));
+
+    const dateKey = selectedDate.toISOString().split('T')[0];
+    localStorage.setItem(`symptoms-${dateKey}`, JSON.stringify(newSelectedSymptoms));
   };
 
   return (
     <div className={styles.tracker}>
       <h2>Symptom Tracker</h2>
+      <HorizontalCalendar onDateSelect={setSelectedDate} />
       <div className={styles.symptoms}>
         {symptoms.map(symptom => (
           <button 
