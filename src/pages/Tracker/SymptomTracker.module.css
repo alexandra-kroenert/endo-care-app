@@ -4,6 +4,7 @@
   
   .symptoms {
     display: flex;
+    flex-direction: column; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
@@ -12,15 +13,17 @@
   
   .symptomButton {
     background-color: #f0f0f0;
-    border: 2px solid #d1d1d1;
+    border: 2px solid #fde2e4;
     padding: 10px 20px;
+    margin-left: 5%; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
+    max-width: 10%;
   }
   
   .symptomButton:hover {
-    background-color: #e1e1e1;
+    background-color: #fde2e4;
   }
   
   .selected {

@@ -5,8 +5,10 @@
   align-items: center;
   padding: 20px; /* Reduced padding */
   min-height: 100vh;
-  background-color: #A9C9FF;
+  background-color: #A1C0FF ;
 }
+
+/* #A9C9FF #c2c1f8 #A9E2FF #8EB2FF #C0DBFF #AFCFFF #92BFFF #B9DFFF #9FC2FF #A9D1FF #98B9FF #B0D0FF*/
 
 .textContent {
   flex-basis: 100%; /* Full width on small screens */

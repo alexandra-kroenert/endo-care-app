@@ -5,6 +5,8 @@ import styles from './SymptomTracker.module.css';
 function SymptomTracker() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
+  /* const [symptomSeverity, setSymptomSeverity] = useState({}); */
+
 
   useEffect(() => {
     // Load stored symptoms from local storage when selectedDate changes
@@ -13,7 +15,10 @@ function SymptomTracker() {
     setSelectedSymptoms(storedSymptoms);
   }, [selectedDate]);
 
-  const symptoms = ['Pain', 'Fatigue', 'Nausea', 'Headache', 'Bloating']; // Add more symptoms as needed
+  const symptoms = ['menstrual cramps', 'menstrual bleeding','bleeding or spotting between periods',
+    'pelvic pain', 'lower back pain', 'pain during or after sex', 'pain during urination', 'fatigue',
+    'pain during bowel movements', 'diarrhea', 'constipation', 'headache', 'nausea',
+    'bloating', 'mood swings']; // Add more symptoms as needed
 
   const handleSymptomClick = (symptom) => {
     const newSelectedSymptoms = selectedSymptoms.includes(symptom) 
